@@ -7,8 +7,7 @@ extensions =
     mr.developer
 extends = http://dist.plone.org/release/4.2b1/versions.cfg
 extends-cache = .
-find-links = 
-    http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
+find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
 parts =
     mod-wsgi
     plone
@@ -26,7 +25,6 @@ eggs =
     repoze.retry
     repoze.tm2
     repoze.vhm
-    repoze.who
 products =
 user = admin:admin
 scripts = paster
@@ -47,3 +45,6 @@ config-file = plone.ini
 recipe = collective.recipe.template
 url = http://build.pythonpackages.com/buildout/plone/plone.ini.in
 output = plone.ini
+
+[versions]
+Zope2 = 2.13.11
