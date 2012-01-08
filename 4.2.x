@@ -2,11 +2,8 @@
 allow-hosts =
     *.plone.org
     *.python.org
-extensions =
-    buildout.bootstrap
-    mr.developer
+extensions = buildout.bootstrap
 extends = http://dist.plone.org/release/4.2b1/versions.cfg
-extends-cache = .
 find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
 parts =
     mod-wsgi
@@ -31,9 +28,6 @@ scripts = paster
 
 [versions]
 distribute = 0.6.24
-# Error: Setup script exited with error: src/config.h: No such file or directory
-# Error: Couldn't install: pycrypto 2.4
-pycrypto = 2.3
 zc.buildout = 1.5.2
 
 [mod-wsgi]
