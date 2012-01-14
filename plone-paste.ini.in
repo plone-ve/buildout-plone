@@ -15,7 +15,7 @@ use = egg:paste#http
 # Begin logging configuration
 
 [loggers]
-keys = root, vanity_app
+keys = root
 
 [handlers]
 keys = console
@@ -26,11 +26,6 @@ keys = generic
 [logger_root]
 level = WARN
 handlers = console
-
-[logger_vanity_app]
-level = WARN
-handlers =
-qualname = vanity_app
 
 [handler_console]
 class = StreamHandler

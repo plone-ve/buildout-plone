@@ -38,5 +38,5 @@ Zope2 = 2.13.11
 
 [wsgi-conf]
 recipe = collective.recipe.template
-url = http://build.pythonpackages.com/buildout/plone/plone.ini.in
-output = plone.ini
+url = http://build.pythonpackages.com/buildout/plone/plone-paste.ini.in
+output = ${buildout:directory}/plone-paste.ini
