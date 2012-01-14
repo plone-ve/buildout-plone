@@ -15,7 +15,7 @@ versions = versions
 [mod-wsgi]
 recipe = collective.recipe.modwsgi
 eggs = ${plone:eggs}
-config-file = plone.ini
+config-file = ${buildout:directory}/plone-mod-wsgi.ini
 
 [plone]
 recipe = plone.recipe.zope2instance
