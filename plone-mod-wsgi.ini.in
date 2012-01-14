@@ -6,8 +6,14 @@ zope_conf = ${plone:location}/etc/zope.conf
 pipeline =
     egg:repoze.retry#retry
     egg:repoze.tm2#tm
-    egg:repoze.vhm#vhm_xheaders
+;    egg:repoze.vhm#vhm_xheaders
+    vhm
     plone
+
+[filter:vhm]
+use = egg:repoze.vhm#vhm_explicit
+host = http://aclark.net
+root = /Plone
 
 # Begin logging configuration
 
