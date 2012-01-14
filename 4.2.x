@@ -8,7 +8,8 @@ find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview
 parts =
     mod-wsgi
     plone
-    wsgi-conf
+    plone-mod-wsgi
+    plone-paste
 versions = versions
 
 [mod-wsgi]
@@ -22,7 +23,6 @@ eggs =
     PasteScript
     Pillow
     Plone
-    Products.PloneHotfix20110928
     WebError
     repoze.retry
     repoze.tm2
@@ -31,12 +31,17 @@ products =
 user = admin:admin
 scripts = paster
 
+[plone-mod-wsgi]
+recipe = collective.recipe.template
+url = http://build.pythonpackages.com/buildout/plone/plone-mod-wsgi.ini.in
+output = ${buildout:directory}/plone-mod-wsgi.ini
+
+[plone-paste]
+recipe = collective.recipe.template
+url = http://build.pythonpackages.com/buildout/plone/plone-paste.ini.in
+output = ${buildout:directory}/plone-paste.ini
+
 [versions]
 distribute = 0.6.24
 zc.buildout = 1.5.2
 Zope2 = 2.13.11
-
-[wsgi-conf]
-recipe = collective.recipe.template
-url = http://build.pythonpackages.com/buildout/plone/plone-paste.ini.in
-output = ${buildout:directory}/plone-paste.ini
