@@ -29,6 +29,7 @@ scripts = paster
 [versions]
 distribute = 0.6.24
 zc.buildout = 1.5.2
+Zope2 = 2.13.11
 
 [mod-wsgi]
 recipe = collective.recipe.modwsgi
@@ -39,6 +40,3 @@ config-file = plone.ini
 recipe = collective.recipe.template
 url = http://build.pythonpackages.com/buildout/plone/plone.ini.in
 output = plone.ini
-
-[versions]
-Zope2 = 2.13.11
