@@ -11,6 +11,11 @@ parts =
     wsgi-conf
 versions = versions
 
+[mod-wsgi]
+recipe = collective.recipe.modwsgi
+eggs = ${plone:eggs}
+config-file = plone.ini
+
 [plone]
 recipe = plone.recipe.zope2instance
 eggs =
@@ -30,11 +35,6 @@ scripts = paster
 distribute = 0.6.24
 zc.buildout = 1.5.2
 Zope2 = 2.13.11
-
-[mod-wsgi]
-recipe = collective.recipe.modwsgi
-eggs = ${plone:eggs}
-config-file = plone.ini
 
 [wsgi-conf]
 recipe = collective.recipe.template
