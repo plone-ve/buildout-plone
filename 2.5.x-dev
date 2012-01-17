@@ -1,5 +1,5 @@
 [buildout]
-extends = http://x.aclark.net/plone/2.5.x/buildout.cfg
+extends = http://build.pythonpackages.com/buildout/plone/2.5.x
 extensions +=
     buildout.dumppickedversions
     mr.developer
