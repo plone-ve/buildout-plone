@@ -17,6 +17,7 @@ parts =
     symlink
     euser
     scriptingcmf
+    supervisor
 find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
 
 [editor]
@@ -91,3 +92,8 @@ command =
     cd ${zope2:location}/lib/Python/Products; ln -sf ${scriptingcmf:location}/ScriptingCMF
     touch ${scriptingcmf:location}/ScriptingCMF/__init__.py
 update-command = ${:command}
+
+[supervisor]
+recipe = collective.recipe.supervisor
+programs = 
+    plone ${zope2:location}/start
