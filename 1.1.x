@@ -88,6 +88,6 @@ command =
     cd ${zope2:location}/lib/Python/Products; ln -sf ${plone:location}/Formulator
     cd ${zope2:location}/lib/Python/Products; ln -sf ${ai:location}/CMFActionIcons 
     cd ${zope2:location}/lib/Python/Products; ln -sf ${editor:location}/ExternalEditor
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${scripting:location}/ScriptingCMF
-    touch ${scripting-cmf:location}/ScriptingCMF/__init__.py
+    cd ${zope2:location}/lib/Python/Products; ln -sf ${scriptingcmf:location}/ScriptingCMF
+    touch ${scriptingcmf:location}/ScriptingCMF/__init__.py
 update-command = ${:command}
