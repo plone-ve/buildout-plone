@@ -96,4 +96,4 @@ update-command = ${:command}
 [supervisor]
 recipe = collective.recipe.supervisor
 programs = 
-    plone ${zope2:location}/start
+    0 plone ${zope2:location}/start
