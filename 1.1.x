@@ -16,6 +16,7 @@ parts =
     editor
     symlink
     euser
+    scriptingcmf
 find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
 
 [editor]
@@ -70,6 +71,10 @@ command =
     ../../bin/zopepy zpasswd.py -u euser -p euser access
 update-command = ${:command}
 
+[scriptingcmf]
+recipe = hexagonit.recipe.download
+url = http://plone.org/products/scriptingcmf/releases/0.1/scriptingcmf-0_1.tgz
+
 [symlink]
 recipe = plone.recipe.command
 command = 
@@ -83,4 +88,6 @@ command =
     cd ${zope2:location}/lib/Python/Products; ln -sf ${plone:location}/Formulator
     cd ${zope2:location}/lib/Python/Products; ln -sf ${ai:location}/CMFActionIcons 
     cd ${zope2:location}/lib/Python/Products; ln -sf ${editor:location}/ExternalEditor
+    cd ${zope2:location}/lib/Python/Products; ln -sf ${scripting:location}/ScriptingCMF
+    touch ${scripting-cmf:location}/ScriptingCMF/__init__.py
 update-command = ${:command}
