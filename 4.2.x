@@ -3,7 +3,7 @@ allow-hosts =
     *.plone.org
     *.python.org
 extensions = buildout.bootstrap
-extends = http://dist.plone.org/release/4.2b1/versions.cfg
+extends = http://dist.plone.org/release/4.2b2/versions.cfg
 find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
 parts =
     development-conf
@@ -43,4 +43,3 @@ output = ${buildout:directory}/production.ini
 [versions]
 distribute = 0.6.24
 zc.buildout = 1.5.2
-Zope2 = 2.13.11
