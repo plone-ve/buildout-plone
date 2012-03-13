@@ -14,7 +14,6 @@ recipe = plone.recipe.zope2instance
 eggs =
     Pillow
     Plone
-    Products.PloneHotfix20110928
 user = admin:admin
 
 [versions]
