@@ -20,5 +20,5 @@ products =
 user = admin:admin
 
 [versions]
-distribute = 0.6.24
+distribute = 0.6.25
 zc.buildout = 1.5.2

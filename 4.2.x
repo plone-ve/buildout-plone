@@ -41,5 +41,5 @@ url = http://build.pythonpackages.com/buildout/plone/plone-mod-wsgi.ini.in
 output = ${buildout:directory}/production.ini
 
 [versions]
-distribute = 0.6.24
+distribute = 0.6.25
 zc.buildout = 1.5.2
