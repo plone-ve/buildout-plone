@@ -19,6 +19,7 @@ verbose-security = on
 eggs +=
     Products.DocFinderTab
     Products.FSDump
+    plone.app.debugtoolbar
 
 # XXX
 #     ImportError: No module named evalexception
