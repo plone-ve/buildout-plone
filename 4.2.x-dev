@@ -21,10 +21,6 @@ eggs +=
     Products.FSDump
     plone.app.debugtoolbar
 
-# XXX
-#     ImportError: No module named evalexception
-#    plone.app.debugtoolbar
-
 [zopepy]
 recipe = zc.recipe.egg
 eggs = ${plone:eggs}
