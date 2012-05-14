@@ -25,7 +25,7 @@ strip-top-level-dir = true
 
 [zope2]
 recipe = plone.recipe.zope2install
-url = http://www.zope.org/Products/Zope/2.8.12/Zope-2.8.12-final.tgz 
+url = http://old.zope.org/Products/Zope/2.7.8/Zope-2.7.8-final.tgz
 
 [versions]
 distribute = 0.6.26
