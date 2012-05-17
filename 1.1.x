@@ -2,7 +2,6 @@
 allow-hosts =
     *.plone.org
     *.python.org
-    *.pythonpackages.com
 extensions = buildout.bootstrap
 extends-cache = .
 versions = versions
