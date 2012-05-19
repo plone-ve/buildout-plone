@@ -50,7 +50,7 @@ url = http://www.zope.org/Products/Zope/2.6.4/Zope-2.6.4-src.tgz
 strip-top-level-dir = true
 
 [versions]
-distribute = 0.6.26
+distribute = 0.6.27
 
 [zopepy]
 recipe = zc.recipe.egg

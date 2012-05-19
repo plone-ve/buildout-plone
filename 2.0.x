@@ -27,7 +27,7 @@ recipe = plone.recipe.zope2install
 url = http://old.zope.org/Products/Zope/2.7.8/Zope-2.7.8-final.tgz
 
 [versions]
-distribute = 0.6.26
+distribute = 0.6.27
 plone.recipe.zope2install = 3.3
 plone.recipe.zope2instance = 3.10
 zc.buildout = 1.5.2
