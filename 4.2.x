@@ -3,7 +3,7 @@ allow-hosts =
     *.plone.org
     *.python.org
 extensions = buildout.bootstrap
-extends = http://dist.plone.org/release/4.2rc1/versions.cfg
+extends = http://dist.plone.org/release/4.2rc2-pending/versions.cfg
 find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
 parts = plone
 versions = versions
