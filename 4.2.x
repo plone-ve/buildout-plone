@@ -16,7 +16,9 @@ recipe = plone.recipe.zope2instance
 eggs =
     Pillow
     Plone
+    zope2_bootstrap
 user = admin:admin
+zcml = zope2_bootstrap
 
 [versions]
 distribute = 0.6.27
