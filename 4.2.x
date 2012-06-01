@@ -2,9 +2,12 @@
 allow-hosts =
     *.plone.org
     *.python.org
+    *.sourceforge.net
 extensions = buildout.bootstrap
 extends = http://dist.plone.org/release/4.2rc2-pending/versions.cfg
-find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
+find-links = 
+    http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
+    http://downloads.sourceforge.net/project/docutils/docutils/0.9/docutils-0.9.tar.gz
 parts = plone
 versions = versions
 
