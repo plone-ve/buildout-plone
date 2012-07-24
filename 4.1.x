@@ -17,5 +17,5 @@ eggs =
 user = admin:admin
 
 [versions]
-distribute = 0.6.27
+distribute = 0.6.28
 zc.buildout = 1.5.2

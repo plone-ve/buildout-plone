@@ -30,7 +30,7 @@ recipe = plone.recipe.zope2install
 url = http://www.zope.org/Products/Zope/2.10.9/Zope-2.10.9-final.tgz
 
 [versions]
-distribute = 0.6.27
+distribute = 0.6.28
 plone.recipe.plone = 3.1.7
 plone.recipe.zope2install = 3.3
 plone.recipe.zope2instance = 3.10
