@@ -15,6 +15,7 @@ recipe = collective.recipe.omelette
 
 [plone]
 eggs +=
+    PasteScript
     Products.DocFinderTab
     Products.FSDump
     ZopeSkel
