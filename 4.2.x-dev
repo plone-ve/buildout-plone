@@ -6,26 +6,30 @@ extensions +=
     mr.developer
 parts +=
     omelette
-    zopepy
+    python
     test
 
 [omelette]
-recipe = collective.recipe.omelette
 eggs = ${plone:eggs}
+recipe = collective.recipe.omelette
 
 [plone]
-#debug-mode = on
-verbose-security = on
 eggs +=
     Products.DocFinderTab
     Products.FSDump
     plone.app.debugtoolbar
+scripts = paster
+verbose-security = on
 
-[zopepy]
-recipe = zc.recipe.egg
+[python]
+# A Python interpreter with Plone in the sys.path
 eggs = ${plone:eggs}
-interpreter = zopepy
+interpreter = python
+recipe = zc.recipe.egg
 
 [test]
-recipe = zc.recipe.testrunner
 eggs = ${plone:eggs}
+recipe = zc.recipe.testrunner
+
+[versions]
+ZopeSkel = 2.21.2
