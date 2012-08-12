@@ -17,6 +17,7 @@ recipe = collective.recipe.omelette
 eggs +=
     Products.DocFinderTab
     Products.FSDump
+    ZopeSkel
     plone.app.debugtoolbar
 scripts = paster
 verbose-security = on
