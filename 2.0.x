@@ -30,4 +30,4 @@ url = http://old.zope.org/Products/Zope/2.7.8/Zope-2.7.8-final.tgz
 distribute = 0.6.28
 plone.recipe.zope2install = 3.3
 plone.recipe.zope2instance = 3.10
-zc.buildout = 1.5.2
+zc.buildout = 1.6.0

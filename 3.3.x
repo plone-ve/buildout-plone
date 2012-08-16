@@ -24,4 +24,4 @@ url = ${versions:zope2-url}
 
 [versions]
 distribute = 0.6.28
-zc.buildout = 1.5.2
+zc.buildout = 1.6.0
