@@ -5,12 +5,12 @@ allow-hosts =
     *.sourceforge.net
 extensions = buildout.bootstrap
 extends = 
-    http://dist.plone.org/release/4.2/versions.cfg
+    http://dist.plone.org/release/4.2.1/versions.cfg
     https://pythonpackages.com/buildout/plone/base.cfg
 find-links = 
     http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
     http://downloads.sourceforge.net/project/docutils/docutils/0.9/docutils-0.9.tar.gz
-parts = plone
+parts = plone supervisor
 versions = versions
 
 [plone]
@@ -21,3 +21,9 @@ eggs =
     zope2_bootstrap
 user = admin:admin
 zcml = zope2_bootstrap
+
+[supervisor]
+recipe = collective.recipe.supervisor
+programs =
+# prio name proc parameters
+    0 plone ${buildout:directory}/bin/plone [ console ]
