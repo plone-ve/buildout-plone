@@ -3,6 +3,7 @@ allow-hosts =
     *.plone.org
     *.python.org
 extensions = buildout.bootstrap
+extends = https://pythonpackages.com/buildout/plone/base.cfg
 extends-cache = .
 versions = versions
 parts = 
@@ -48,9 +49,6 @@ strip-top-level-dir = true
 recipe = hexagonit.recipe.download
 url = http://www.zope.org/Products/Zope/2.6.4/Zope-2.6.4-src.tgz
 strip-top-level-dir = true
-
-[versions]
-distribute = 0.6.28
 
 [zopepy]
 recipe = zc.recipe.egg

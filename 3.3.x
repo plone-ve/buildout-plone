@@ -2,7 +2,9 @@
 allow-hosts =
     *.plone.org
     *.python.org
-extends = http://dist.plone.org/release/3.3.6/versions.cfg
+extends = 
+    http://dist.plone.org/release/3.3.6/versions.cfg
+    https://pythonpackages.com/buildout/plone/base.cfg
 extensions = buildout.bootstrap
 extends-cache = .
 find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
@@ -21,7 +23,3 @@ zope2-location = ${zope2:location}
 [zope2]
 recipe = plone.recipe.zope2install
 url = ${versions:zope2-url}
-
-[versions]
-distribute = 0.6.28
-zc.buildout = 1.6.0

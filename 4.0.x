@@ -3,7 +3,9 @@ allow-hosts =
     *.plone.org
     *.python.org
 extensions = buildout.bootstrap
-extends = http://dist.plone.org/release/4.0.8/versions.cfg 
+extends =
+    http://dist.plone.org/release/4.0.8/versions.cfg 
+    https://pythonpackages.com/buildout/plone/base.cfg
 extends-cache = .
 find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
 parts = plone
@@ -18,7 +20,3 @@ eggs =
 
 products =
 user = admin:admin
-
-[versions]
-distribute = 0.6.28
-zc.buildout = 1.6.0

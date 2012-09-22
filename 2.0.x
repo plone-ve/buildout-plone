@@ -3,6 +3,7 @@ allow-hosts =
     *.plone.org
     *.python.org
 extensions = buildout.bootstrap
+extends = https://pythonpackages.com/buildout/plone/base.cfg
 extends-cache = .
 find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
 parts =
@@ -27,7 +28,5 @@ recipe = plone.recipe.zope2install
 url = http://old.zope.org/Products/Zope/2.7.8/Zope-2.7.8-final.tgz
 
 [versions]
-distribute = 0.6.28
 plone.recipe.zope2install = 3.3
 plone.recipe.zope2instance = 3.10
-zc.buildout = 1.6.0
