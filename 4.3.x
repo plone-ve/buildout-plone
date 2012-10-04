@@ -18,6 +18,7 @@ recipe = plone.recipe.zope2instance
 eggs =
     Pillow
     Plone
+    collective.responsivetheme
     zope2_bootstrap
 user = admin:admin
 zcml = zope2_bootstrap
