@@ -3,7 +3,7 @@ allow-hosts =
     *.plone.org
     *.python.org
 extensions = buildout.bootstrap
-extends = http://pythonpackages.com/buildout/plone/base.cfg
+extends = https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
 extends-cache = .
 versions = versions
 parts = 

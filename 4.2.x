@@ -6,7 +6,7 @@ allow-hosts =
 extensions = buildout.bootstrap
 extends = 
     http://dist.plone.org/release/4.2.1/versions.cfg
-    http://pythonpackages.com/buildout/plone/base.cfg
+    https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
 find-links = 
     http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
     http://downloads.sourceforge.net/project/docutils/docutils/0.9/docutils-0.9.tar.gz

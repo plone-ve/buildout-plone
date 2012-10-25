@@ -1,5 +1,5 @@
 [buildout]
-extends = http://pythonpackages.com/buildout/plone/3.3.x
+extends = https://raw.github.com/pythonpackages/buildout-plone/master/3.3.x
 parts += backup backups packups supervisor zeo 
 
 [plone]

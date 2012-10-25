@@ -1,6 +1,6 @@
 [buildout]
 auto-checkout = *
-extends = http://pythonpackages.com/buildout/plone/1.1.x
+extends = https://raw.github.com/pythonpackages/buildout-plone/master/1.1.x
 extensions +=
     buildout.dumppickedversions
     mr.developer

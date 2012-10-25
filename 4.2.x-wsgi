@@ -15,7 +15,7 @@ versions = versions
 
 [development-conf]
 recipe = collective.recipe.template
-url = http://build.pythonpackages.com/buildout/plone/conf/plone-paste.ini.in
+url = http://pythonpackages.com/buildout/plone/conf/plone-paste.ini.in
 output = ${buildout:directory}/development.ini
 
 [mod-wsgi]
@@ -38,7 +38,7 @@ scripts = paster
 
 [production-conf]
 recipe = collective.recipe.template
-url = http://build.pythonpackages.com/buildout/plone/conf/plone-mod-wsgi.ini.in
+url = http://pythonpackages.com/buildout/plone/conf/plone-mod-wsgi.ini.in
 output = ${buildout:directory}/production.ini
 
 [versions]
