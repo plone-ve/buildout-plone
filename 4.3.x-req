@@ -69,7 +69,6 @@ borg.localrole==3.0.2
 collective.monkeypatcher==1.0.1
 collective.recipe.omelette==0.15
 collective.recipe.supervisor==0.17
-collective.responsivetheme==1.2.2
 collective.z3cform.datetimewidget==1.2.1
 diazo==1.0.2
 distribute==0.6.30
