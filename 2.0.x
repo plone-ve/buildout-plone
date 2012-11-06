@@ -13,7 +13,9 @@ versions = versions
 
 [instance]
 recipe = plone.recipe.zope2instance
-eggs = Pillow
+eggs = 
+    Pillow
+    Products.PloneHotfix20121106
 products = ${plone:location}
 user = admin:admin
 zope2-location = ${zope2:location}

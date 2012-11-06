@@ -16,6 +16,7 @@ recipe = plone.recipe.zope2instance
 eggs = 
     Pillow
     Plone
+    Products.PloneHotfix20121106
 products =
 user = admin:admin
 zope2-location = ${zope2:location}
