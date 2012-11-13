@@ -1,6 +1,5 @@
 [buildout]
 auto-checkout = *
-develop = .
 extends = https://raw.github.com/pythonpackages/buildout-plone/master/4.3.x
 extensions += 
     buildout.dumppickedversions
