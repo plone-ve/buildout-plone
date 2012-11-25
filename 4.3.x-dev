@@ -20,6 +20,7 @@ eggs +=
     Products.FSDump
     ZopeSkel
     plone.app.debugtoolbar
+    plone.app.testing
 scripts = ZopeSkel
 verbose-security = on
 
