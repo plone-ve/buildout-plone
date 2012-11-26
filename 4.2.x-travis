@@ -1,6 +1,0 @@
-[buildout]
-extends = 4.2.x
-
-[versions]
-# Use same version as travis
-distribute = 0.6.28
