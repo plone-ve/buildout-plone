@@ -2,6 +2,7 @@
 extends = 
     https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
     http://dist.plone.org/release/4.3a2/versions.cfg
+versions = versions
 
 [plone]
 recipe = plone.recipe.zope2instance
