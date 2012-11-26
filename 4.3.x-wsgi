@@ -2,20 +2,12 @@
 extends = 
     http://dist.plone.org/release/4.3a2/versions.cfg
     https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
-parts +=
-    development-conf
-    mod-wsgi
-    production-conf
+parts += wsgi
 
-[development-conf]
+[wsgi]
 recipe = collective.recipe.template
-url = https://raw.github.com/pythonpackages/buildout-plone/master/paste.in
-output = ${buildout:directory}/development.ini
-
-[mod-wsgi]
-recipe = collective.recipe.modwsgi
-eggs = ${plone:eggs}
-config-file = ${buildout:directory}/plone-mod-wsgi.ini
+url = https://raw.github.com/pythonpackages/buildout-plone/master/plone.ini
+output = ${buildout:directory}/plone.ini
 
 [plone]
 eggs +=
@@ -26,8 +18,3 @@ eggs +=
     repoze.vhm
 user = admin:admin
 scripts = paster
-
-[production-conf]
-recipe = collective.recipe.template
-url = https://raw.github.com/pythonpackages/buildout-plone/master/wsgi.in
-output = ${buildout:directory}/production.ini
