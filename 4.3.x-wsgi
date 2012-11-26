@@ -1,7 +1,7 @@
 [buildout]
 extends = 
-    https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
     http://dist.plone.org/release/4.3a2/versions.cfg
+    https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
 parts +=
     development-conf
     mod-wsgi
@@ -9,7 +9,7 @@ parts +=
 
 [development-conf]
 recipe = collective.recipe.template
-url = http://pythonpackages.com/buildout/plone/conf/plone-paste.ini.in
+url = https://raw.github.com/pythonpackages/buildout-plone/master/paste.in
 output = ${buildout:directory}/development.ini
 
 [mod-wsgi]
@@ -29,5 +29,5 @@ scripts = paster
 
 [production-conf]
 recipe = collective.recipe.template
-url = http://pythonpackages.com/buildout/plone/conf/plone-mod-wsgi.ini.in
+url = https://raw.github.com/pythonpackages/buildout-plone/master/wsgi.in
 output = ${buildout:directory}/production.ini
