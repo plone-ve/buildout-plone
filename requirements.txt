@@ -1,1 +1,2 @@
-zc.buildout
+distribute==0.6.31
+zc.buildout==1.6.3
