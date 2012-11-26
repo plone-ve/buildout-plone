@@ -33,6 +33,3 @@ recipe = zc.recipe.egg
 [test]
 eggs = ${plone:eggs}
 recipe = zc.recipe.testrunner
-
-[versions]
-ZopeSkel = 2.21.2
