@@ -1,1 +1,1 @@
-http://docs.pythonpackages.com/en/latest/advanced.html
+http://docs.pythonpackages.com/en/latest/hosted-configs/index.html
