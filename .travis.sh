@@ -5,5 +5,4 @@ do
     echo Buildout: Plone $VER...
     echo ================================================================================
     buildout -c $VER-travis
-    echo Buildout: Plone $VER... done.
 done
