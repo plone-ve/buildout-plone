@@ -1,17 +1,7 @@
 [buildout]
-allow-hosts =
-    *.plone.org
-    *.python.org
-    *.sourceforge.net
-extensions = buildout.bootstrap
 extends = 
-    http://dist.plone.org/release/4.3a2/versions.cfg
     https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
-find-links = 
-    http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
-    http://downloads.sourceforge.net/project/docutils/docutils/0.9/docutils-0.9.tar.gz
-parts = plone supervisor
-versions = versions
+    http://dist.plone.org/release/4.3a2/versions.cfg
 
 [plone]
 recipe = plone.recipe.zope2instance
