@@ -2,19 +2,4 @@
 extends = 
     http://dist.plone.org/release/4.3a2/versions.cfg
     https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
-parts += wsgi
-
-[wsgi]
-recipe = collective.recipe.template
-url = https://raw.github.com/pythonpackages/buildout-plone/master/plone.ini
-output = ${buildout:directory}/plone.ini
-
-[plone]
-eggs +=
-    PasteScript
-    WebError
-    repoze.retry
-    repoze.tm2
-    repoze.vhm
-user = admin:admin
-scripts = paster
+    https://raw.github.com/pythonpackages/buildout-plone/master/wsgi.cfg
