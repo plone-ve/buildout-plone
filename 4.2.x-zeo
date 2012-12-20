@@ -1,5 +1,5 @@
 [buildout]
-extends = http://pythonpackages.com/buildout/plone/4.2.x
+extends = https://raw.github.com/pythonpackages/buildout-plone/master/4.2.x
 parts +=
     backup
     backup-daily
