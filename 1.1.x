@@ -77,17 +77,17 @@ url = http://plone.org/products/scriptingcmf/releases/0.1/scriptingcmf-0_1.tgz
 [symlink]
 recipe = plone.recipe.command
 command = 
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${plone:location}/CMFPlone
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${cmf:location}/CMFCore
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${cmf:location}/CMFDefault
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${cmf:location}/CMFTopic
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${cmf:location}/CMFCalendar
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${qi:location} CMFQuickInstallerTool
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${cmf:location}/DCWorkflow
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${plone:location}/Formulator
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${ai:location}/CMFActionIcons 
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${editor:location}/ExternalEditor
-    cd ${zope2:location}/lib/Python/Products; ln -sf ${scriptingcmf:location}/ScriptingCMF
+    cd ${zope2:location}/lib/python/Products; ln -sf ${plone:location}/CMFPlone
+    cd ${zope2:location}/lib/python/Products; ln -sf ${cmf:location}/CMFCore
+    cd ${zope2:location}/lib/python/Products; ln -sf ${cmf:location}/CMFDefault
+    cd ${zope2:location}/lib/python/Products; ln -sf ${cmf:location}/CMFTopic
+    cd ${zope2:location}/lib/python/Products; ln -sf ${cmf:location}/CMFCalendar
+    cd ${zope2:location}/lib/python/Products; ln -sf ${qi:location} CMFQuickInstallerTool
+    cd ${zope2:location}/lib/python/Products; ln -sf ${cmf:location}/DCWorkflow
+    cd ${zope2:location}/lib/python/Products; ln -sf ${plone:location}/Formulator
+    cd ${zope2:location}/lib/python/Products; ln -sf ${ai:location}/CMFActionIcons 
+    cd ${zope2:location}/lib/python/Products; ln -sf ${editor:location}/ExternalEditor
+    cd ${zope2:location}/lib/python/Products; ln -sf ${scriptingcmf:location}/ScriptingCMF
     touch ${scriptingcmf:location}/ScriptingCMF/__init__.py
 update-command = ${:command}
 
