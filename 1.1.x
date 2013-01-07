@@ -16,7 +16,6 @@ parts =
     ai
     editor
     symlink
-    euser
     scriptingcmf
     supervisor
 find-links = http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
@@ -61,13 +60,6 @@ recipe = plone.recipe.command
 command = 
     cd ${zope2:location}
     ../../bin/zopepy w_pcgi.py
-update-command = ${:command}
-
-[euser]
-recipe = plone.recipe.command
-command = 
-    cd ${zope2:location}
-    ../../bin/zopepy zpasswd.py -u euser -p euser access
 update-command = ${:command}
 
 [scriptingcmf]
