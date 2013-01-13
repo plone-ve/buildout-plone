@@ -5,7 +5,6 @@ extends =
 
 [plone]
 eggs += 
-    Products.PloneHotfix20121106
     zope2_bootstrap
 zcml +=
     zope2_bootstrap
