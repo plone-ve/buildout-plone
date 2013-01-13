@@ -4,7 +4,7 @@ allow-hosts =
     *.python.org
 extensions = buildout.bootstrap
 extends = 
-    http://dist.plone.org/release/4.1.4/versions.cfg
+    http://dist.plone.org/release/4.1.6/versions.cfg
     https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
 find-links =
     http://dist.plone.org/thirdparty/elementtree-1.2.7-20070827-preview.zip
