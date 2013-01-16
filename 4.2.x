@@ -18,7 +18,6 @@ recipe = plone.recipe.zope2instance
 eggs =
     Pillow
     Plone
-    Products.PloneHotfix20121106
     zope2_bootstrap
 user = admin:admin
 zcml = zope2_bootstrap
