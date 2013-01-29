@@ -1,6 +1,6 @@
 [buildout]
 extends = 
-    http://dist.plone.org/release/4.3b1/versions.cfg
+    http://dist.plone.org/release/4.3b2/versions.cfg
     https://raw.github.com/pythonpackages/buildout-plone/master/base.cfg
 
 [plone]
